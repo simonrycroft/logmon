@@ -1,0 +1,11 @@
+version: "3"
+tasks:
+  deps: { cmds: ["go mod download"] }
+  lint: { cmds: ["golangci-lint run"], deps: [deps] }
+  test: { cmds: ["go test ./... -race -cover"], deps: [deps] }
+  build:
+    cmds: ["go build -o bin/logmon ./cmd/logmon"]
+    sources: ["**/*.go", "go.mod", "go.sum"]
+    generates: ["bin/logmon"]
+  run: { cmds: ["go run ./cmd/logmon"], deps: [deps] }
+  default: { deps: [lint, test] }
