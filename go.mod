@@ -1,1 +1,1 @@
-module logmon
+module github.com/simonrycroft/logmon
