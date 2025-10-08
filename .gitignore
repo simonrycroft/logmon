@@ -1,1 +1,57 @@
-.idea
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go build output
+*.test
+*.out
+*.cover
+*.prof
+*.profraw
+*.profdata
+
+# Build directories
+bin/
+build/
+dist/
+
+# Dependency directories (if you vendor them)
+vendor/
+
+# Logs and runtime data
+*.log
+*.pid
+*.seed
+*.tmp
+*.bak
+*.swp
+
+# Coverage and benchmarking artifacts
+coverage.txt
+coverage.out
+profile.out
+bench.out
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.iml
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Environment and local config
+.env
+.env.*
+.envrc
+
+# Go module sum file can usually stay tracked — remove only if you regenerate it often
+# go.sum
+
+# Task / Make build cache
+.task/
+.magefile_cache/
